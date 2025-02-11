@@ -6,8 +6,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/about', function () {
-    return view('about', ['nama' => 'tiara']);
+Route::get('/detail', function () {
+    return view('detail');
 });
 
 Route::get('/product', function () {
