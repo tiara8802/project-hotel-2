@@ -7,6 +7,8 @@
   @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@github/login-button/dist/github-login-button.js"></script>
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
@@ -123,7 +125,7 @@
       </button>
     </div>
     <p class="mt-6 text-sm text-center text-gray-500">
-      Not a member? <a href="#" class="text-blue-600 hover:underline">Start a 14 day free trial</a>
+      Not a member? <a href="#" class="text-blue-600 hover:underline">Register</a>
     </p>
   </div>
 </body>
