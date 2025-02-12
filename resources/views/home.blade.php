@@ -28,13 +28,15 @@
   }
 </style>
 
+<link href="carousel/carousel.css" rel="stylesheet">
+
 <div>
   <header class="fixed inset-x-0 top-0 z-50 bg-white">
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="{{ url('/images/flo.png') }}" alt="">
+          <img class="h-8 w-auto" src="{{ url('/images/flo.png') }}" alt="" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
         </a>
       </div>
       <div class="flex lg:hidden">
@@ -47,11 +49,11 @@
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
         <a href="/home" class="text-sm/6 font-semibold text-gray-900">Home</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Service</a>
+        <a href="#" class="text-sm/6 font-semibold text-gray-900">Facilities</a>
         <a href="/product" class="text-sm/6 font-semibold text-gray-900">Rooms</a>
         <a href="#" class="text-sm/6 font-semibold text-gray-900">Book Now</a>
-        <a href="/about" class="text-sm/6 font-semibold text-gray-900">About Us</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Contact Us</a>
+
+        <a href="/contact" class="text-sm/6 font-semibold text-gray-900">Contact Us</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="/login" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
