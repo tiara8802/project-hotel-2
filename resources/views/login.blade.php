@@ -13,13 +13,6 @@
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
 <style>
-  body {
-        background-image: url('images/view.jpg'); 
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat; 
-      }
-
   .text-gray-900 {
     color:rgb(19, 19, 19);
   }
@@ -93,8 +86,9 @@
   </header>
 
   <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-md">
-    <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Sign in to your account</h2>
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">SIGN IN YOUR ACCOUNT</h2>
     <form>
+
       <div class="mb-4">
         <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
         <input type="email" id="email" name="email" required
@@ -118,19 +112,8 @@
         Sign in
       </button>
     </form>
-    <div class="my-6 text-center text-gray-500">Or continue with</div>
-    <div class="flex justify-center space-x-4">
-      <button class="flex items-center px-4 py-2 border rounded-lg text-gray-700 hover:bg-gray-100">
-        <img src="https://www.google.com/favicon.ico" alt="Google" class="h-5 w-5 mr-2">
-        Google
-      </button>
-      <button class="flex items-center px-4 py-2 border rounded-lg text-gray-700 hover:bg-gray-100">
-        <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" class="h-5 w-5 mr-2">
-        GitHub
-      </button>
-    </div>
     <p class="mt-6 text-sm text-center text-gray-500">
-      Not a member? <a href="#" class="text-blue-600 hover:underline">Register</a>
+      Not a member? <a href="/register" class="text-blue-600 hover:underline">Register</a>
     </p>
   </div>
 </body>
