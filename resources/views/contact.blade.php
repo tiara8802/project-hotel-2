@@ -6,85 +6,109 @@
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>halaman home</title>
+    <title>halaman contact</title>
 </head>
 <body>
 
 <style>
 
-  .text-gray-900 {
+  .header-text {
     color:rgb(19, 19, 19);
   }
 
-  .text-gray-900:active,
-  .text-gray-900:focus {
+  .header-text:active,
+  .header-text:focus {
     color:rgb(252, 241, 144); 
+  }
+  
+  .form-text {
+      color: rgb(19, 19, 19); 
+  }
+
+  .form-text:active,
+  .form-text:focus {
+      color: rgb(19, 19, 19); 
   }
 </style>
 
-<link href="carousel/carousel.css" rel="stylesheet">
+
 
 <div>
-  <header class="fixed inset-x-0 top-0 z-50 bg-white">
-    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-      <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="{{ url('/images/flo.png') }}" alt="" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-        </a>
-      </div>
-      <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-          <span class="sr-only">Open main menu</span>
-          <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-        </button>
-      </div>
-      <div class="hidden lg:flex lg:gap-x-12">
-        <a href="/home" class="text-sm/6 font-semibold text-gray-900">Home</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Facilities</a>
-        <a href="/product" class="text-sm/6 font-semibold text-gray-900">Rooms</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Book Now</a>
-        <a href="/contact" class="text-sm/6 font-semibold text-gray-900">Contact Us</a>
-      </div>
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="/login" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
-      </div>
-    </nav>
-    <!-- Mobile menu, show/hide based on menu open state. -->
-    <div class="lg:hidden" role="dialog" aria-modal="true">
-      <!-- Background backdrop, show/hide based on slide-over state. -->
-      <div class="fixed inset-0 z-50"></div>
-      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
-          </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-            <span class="sr-only">Close menu</span>
-            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-            </svg>
-          </button>
+<header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto flex justify-between items-center px-6 py-4">
+            <!-- Logo -->
+            <a href="#" class="text-xl font-bold">
+                <img src="{{ url('/images/flo.png') }}" alt="Hotel Logo" class="h-12">
+            </a>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="/home" class="text-gray-700 hover:text-blue-600">Home</a>
+
+                <!-- Dropdown Rooms -->
+                <div class="relative group">
+                    <button class="text-gray-700 hover:text-blue-600 flex items-center">
+                        Rooms 
+                    </button>
+                    <div class="absolute left-0 mt-2 w-40 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 transition duration-300">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Deluxe Room</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Double Room</a>
+                        <a href="/product" class="block px-4 py-2 hover:bg-gray-100">Suite Room</a>
+                    </div>
+                </div>
+
+                <!-- Dropdown Dining -->
+                <div class="relative group">
+                    <button class="text-gray-700 hover:text-blue-600 flex items-center">
+                        Facilities
+                    </button>
+                    <div class="absolute left-0 mt-2 w-40 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 transition duration-300">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Restaurant</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Café</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Room Service</a>
+                    </div>
+                </div>
+
+                <a href="/contact" class="text-gray-700 hover:text-blue-600">Contact Us</a>
+            </nav>
+
+            <a href="login" class="text-gray-700 hover:text-blue-600">Login <span aria-hidden="true">&rarr;</span></a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuToggle" class="md:hidden text-gray-700 focus:outline-none">
+                ☰
+            </button>
         </div>
-        <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/10">
-            <div class="space-y-2 py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden bg-white md:hidden shadow-md">
+            <a href="#" class="block px-6 py-3 border-b text-gray-700 hover:bg-gray-100">Home</a>
+            
+            <!-- Mobile Dropdown Rooms -->
+            <div class="border-b">
+                <button id="mobileRooms" class="w-full text-left px-6 py-3 text-gray-700 hover:bg-gray-100">Rooms</button>
+                <div id="roomsDropdown" class="hidden bg-gray-50">
+                    <a href="#" class="block px-8 py-2">Deluxe Room</a>
+                    <a href="#" class="block px-8 py-2">Suite Room</a>
+                    <a href="#" class="block px-8 py-2">Family Room</a>
+                </div>
             </div>
-            <div class="py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+
+            <!-- Mobile Dropdown Dining -->
+            <div class="border-b">
+                <button id="mobileDining" class="w-full text-left px-6 py-3 text-gray-700 hover:bg-gray-100">Dining</button>
+                <div id="diningDropdown" class="hidden bg-gray-50">
+                    <a href="#" class="block px-8 py-2">Restaurant</a>
+                    <a href="#" class="block px-8 py-2">Café</a>
+                    <a href="#" class="block px-8 py-2">Room Service</a>
+                </div>
             </div>
-          </div>
+
+            <a href="#" class="block px-6 py-3 border-b text-gray-700 hover:bg-gray-100">Gallery</a>
+            <a href="#" class="block px-6 py-3 border-b text-gray-700 hover:bg-gray-100">Contact</a>
+            <a href="#" class="block px-6 py-3 bg-blue-600 text-white text-center">Book Now</a>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
   <div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
   <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">

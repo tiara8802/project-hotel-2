@@ -9,25 +9,15 @@
     <title>halaman detail</title>
 </head>
 <body>
-
-<style>
-  .text-gray-900 {
-    color:rgb(19, 19, 19);
-  }
-
-  .text-gray-900:active,
-  .text-gray-900:focus {
-    color:rgb(252, 241, 144); 
-  }
-</style>
+  
 
 <div>
-  <header class="fixed inset-x-0 top-0 z-50 bg-white">
+<header class="fixed inset-x-0 top-0 z-50 bg-white">
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="{{ url('/images/flo.png') }}" alt="" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <img class="h-8 w-auto" src="{{ url('/images/flo.png') }}" alt="">
         </a>
       </div>
       <div class="flex lg:hidden">
@@ -40,13 +30,14 @@
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
         <a href="/home" class="text-sm/6 font-semibold text-gray-900">Home</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Facilities</a>
-        <a href="/product" class="text-sm/6 font-semibold text-gray-900">Rooms</a>
+        <a href="#" class="text-sm/6 font-semibold text-gray-900">Service</a>
+        <a href="/product" class="text-sm/6 font-semibold text-gray-900">Facilities</a>
         <a href="#" class="text-sm/6 font-semibold text-gray-900">Book Now</a>
+
         <a href="/contact" class="text-sm/6 font-semibold text-gray-900">Contact Us</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="/login" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+        <a href="/login" class="text-sm/6 font-semibold text-gray-900"></a>
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
@@ -69,20 +60,21 @@
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+            <a href="/home" class="text-sm/6 font-semibold text-gray-900">Home</a>
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Facilities</a>
+            <a href="/product" class="text-sm/6 font-semibold text-gray-900">Rooms</a>
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Book Now</a>
+
+            <a href="/contact" class="text-sm/6 font-semibold text-gray-900">Contact Us</a>
             </div>
             <div class="py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+              <a href="login" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-</header>
-
+  </header>
 </div>
 
 <!--
@@ -128,16 +120,7 @@
         </li>
       </ol>
     </nav>
-
-    <!-- Image gallery -->
-    <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
-      <img src="{{ url('/images/room.jpg') }}" alt="Two each of gray, white, and black shirts laying flat." class="hidden size-full rounded-lg object-cover lg:block">
-      <div class="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
-        <img src="{{ url('/images/room.jpg') }}" alt="Model wearing plain black basic tee." class="aspect-3/2 w-full rounded-lg object-cover">
-        <img src="{{ url('/images/room.jpg') }}" alt="Model wearing plain gray basic tee." class="aspect-3/2 w-full rounded-lg object-cover">
-      </div>
-      <img src="{{ url('/images/room.jpg') }}" alt="Model wearing plain white basic tee." class="aspect-4/5 size-full object-cover sm:rounded-lg lg:aspect-auto">
-    </div>
+    
 
     <!-- Product info -->
     <div class="mx-auto max-w-2xl px-4 pt-10 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto_auto_1fr] lg:gap-x-8 lg:px-8 lg:pt-16 lg:pb-24">
@@ -178,30 +161,7 @@
         </div>
 
         <form class="mt-10">
-          <!-- Colors -->
-          <div>
-            <h3 class="text-sm font-medium text-gray-900">Color</h3>
-
-            <fieldset aria-label="Choose a color" class="mt-4">
-              <div class="flex items-center gap-x-3">
-                <!-- Active and Checked: "ring-3 ring-offset-1" -->
-                <label aria-label="White" class="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-gray-400 focus:outline-hidden">
-                  <input type="radio" name="color-choice" value="White" class="sr-only">
-                  <span aria-hidden="true" class="size-8 rounded-full border border-black/10 bg-white"></span>
-                </label>
-                <!-- Active and Checked: "ring-3 ring-offset-1" -->
-                <label aria-label="Gray" class="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-gray-400 focus:outline-hidden">
-                  <input type="radio" name="color-choice" value="Gray" class="sr-only">
-                  <span aria-hidden="true" class="size-8 rounded-full border border-black/10 bg-gray-200"></span>
-                </label>
-                <!-- Active and Checked: "ring-3 ring-offset-1" -->
-                <label aria-label="Black" class="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-gray-900 focus:outline-hidden">
-                  <input type="radio" name="color-choice" value="Black" class="sr-only">
-                  <span aria-hidden="true" class="size-8 rounded-full border border-black/10 bg-gray-900"></span>
-                </label>
-              </div>
-            </fieldset>
-          </div>
+          
 
           <!-- Sizes -->
           <div class="mt-10">
@@ -296,7 +256,7 @@
             </fieldset>
           </div>
 
-          <button type="submit" class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden">Add to bag</button>
+          <button type="submit" class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden">Book Now</button>
         </form>
       </div>
 
