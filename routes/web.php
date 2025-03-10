@@ -23,7 +23,6 @@ Route::get('/login', function () {
     return view('login');
 });
 
-<<<<<<< HEAD
 // Route::get('/regis', function () {
 //     return view('regis');
 // });
@@ -45,7 +44,6 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
  
-=======
 Route::get('/home', function () {
     return view('home');
 });
@@ -58,4 +56,3 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
->>>>>>> 176a6f45aee58e88f131d3b94da4f7d772675987

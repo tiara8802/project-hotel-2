@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-<<<<<<< HEAD
+// <<<<<<< HEAD
         
-=======
+// =======
         // Tabel users
->>>>>>> 176a6f45aee58e88f131d3b94da4f7d772675987
+// >>>>>>> 176a6f45aee58e88f131d3b94da4f7d772675987
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
