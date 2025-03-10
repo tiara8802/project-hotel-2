@@ -11,12 +11,7 @@
 
   <style>
 
-  body {
-    padding-top: 64px; 
-    margin: 0;
-    height: 100%;
-    overflow-y: auto;
-  }
+
 
   .text-gray-900 {
     color:rgb(19, 19, 19);
@@ -51,11 +46,11 @@
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
         <a href="/home" class="text-sm/6 font-semibold text-gray-900">Home</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Service</a>
+        <a href="#" class="text-sm/6 font-semibold text-gray-900">Facilities</a>
         <a href="/product" class="text-sm/6 font-semibold text-gray-900">Rooms</a>
         <a href="#" class="text-sm/6 font-semibold text-gray-900">Book Now</a>
-        <a href="/about" class="text-sm/6 font-semibold text-gray-900">About Us</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Contact Us</a>
+
+        <a href="/contact" class="text-sm/6 font-semibold text-gray-900">Contact Us</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="login" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
@@ -100,7 +95,7 @@
     <h2 class="sr-only">Products</h2>
 
     <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-      <a href="#" class="group">
+      <a href="/detail" class="group">
         <img src="{{ url('/images/room (5).jpg') }}" alt="" class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8">
         <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
         <p class="mt-1 text-lg font-medium text-gray-900">$48</p>

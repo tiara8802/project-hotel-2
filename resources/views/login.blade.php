@@ -13,6 +13,11 @@
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
 <style>
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> 176a6f45aee58e88f131d3b94da4f7d772675987
   .text-gray-900 {
     color:rgb(19, 19, 19);
   }
@@ -42,10 +47,10 @@
       <div class="hidden lg:flex lg:gap-x-12">
         <a href="/home" class="text-sm/6 font-semibold text-gray-900">Home</a>
         <a href="#" class="text-sm/6 font-semibold text-gray-900">Service</a>
-        <a href="/product" class="text-sm/6 font-semibold text-gray-900">Rooms</a>
+        <a href="/product" class="text-sm/6 font-semibold text-gray-900">Facilities</a>
         <a href="#" class="text-sm/6 font-semibold text-gray-900">Book Now</a>
-        <a href="/about" class="text-sm/6 font-semibold text-gray-900">About Us</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Contact Us</a>
+
+        <a href="/contact" class="text-sm/6 font-semibold text-gray-900">Contact Us</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="/login" class="text-sm/6 font-semibold text-gray-900"></a>
