@@ -28,7 +28,7 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/reservations/create', [ReservationController::class, 'create'])->name('create');
+Route::get('/reservations/create', [ReservationController::class, 'create'])->name('reservations.create');
 Route::post('/reservations', [ReservationController::class, 'store'])->name('reservations.store');
 
 Route::middleware('auth')->group(function () {

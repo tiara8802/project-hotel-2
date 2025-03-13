@@ -63,6 +63,8 @@
                 <a href="/contact" class="text-gray-700 hover:text-blue-600">Contact Us</a>
             </nav>
 
+            <a href="login" class="text-gray-700 hover:text-blue-600"></a>
+
             <!-- Mobile Menu Button -->
             <button id="menuToggle" class="md:hidden text-gray-700 focus:outline-none">
                 ☰

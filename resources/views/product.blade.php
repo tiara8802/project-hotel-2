@@ -11,8 +11,6 @@
 
   <style>
 
-
-
   .text-gray-900 {
     color:rgb(19, 19, 19);
   }
