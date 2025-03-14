@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ReservationController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -48,6 +49,8 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/reservations/create', [ReservationController::class, 'create'])->name('reservations.create');
+Route::post('/reservations', [ReservationController::class, 'store'])->name('reservations.store');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
