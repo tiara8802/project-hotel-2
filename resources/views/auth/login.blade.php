@@ -114,20 +114,24 @@
         </div>
         <a href="#" class="text-sm text-blue-600 hover:underline">Forgot password?</a>
       </div>
-      <!-- <x-primary-button class="ms-3">
+      <x-primary-button class="ms-3">
                 {{ __('Log in') }}
-            </x-primary-button> -->
+            </x-primary-button>
       <button type="submit"
         class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
         Login
       </button>
     </form>
+    <!-- <div class="flex justify-center mt-4">
+            <a href="/home" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-center">
+            {{ __('Sign in') }}
+            </a> -->
       <button type="submit"
         class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
         Sign in
       </button>
     </form>
-    <div class="my-6 text-center text-gray-500">Or continue with</div>
+    <!-- <div class="my-6 text-center text-gray-500">Or continue with</div>
     <div class="flex justify-center space-x-4">
       <button class="flex items-center px-4 py-2 border rounded-lg text-gray-700 hover:bg-gray-100">
         <img src="https://www.google.com/favicon.ico" alt="Google" class="h-5 w-5 mr-2">
@@ -137,7 +141,7 @@
         <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" class="h-5 w-5 mr-2">
         GitHub
       </button>
-    </div>
+    </div> -->
     <p class="mt-6 text-sm text-center text-gray-500">
       Not a member? <a href="#" class="text-blue-600 hover:underline">Register</a>
     </p>

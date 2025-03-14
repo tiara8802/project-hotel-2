@@ -56,4 +56,7 @@ Route::middleware('auth')->group(function () {
 
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
         ->name('logout');
+
+    Route::get('/payment', [FiturBayarController::class, 'showPaymentForm'])->name('payment.form');
+    Route::post('/payment/process', [FiturBayarController::class, 'processPayment'])->name('payment.process');
 });

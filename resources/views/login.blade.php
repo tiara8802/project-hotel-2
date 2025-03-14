@@ -13,14 +13,11 @@
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
 <style>
-<<<<<<< HEAD
-=======
     
 
->>>>>>> 176a6f45aee58e88f131d3b94da4f7d772675987
   .text-gray-900 {
     color:rgb(19, 19, 19);
-  }
+  } 
 
   .text-gray-900:active,
   .text-gray-900:focus {
